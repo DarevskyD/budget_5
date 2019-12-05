@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu';
@@ -38,7 +38,7 @@ a:active {
   line-height: 60px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1.5px 10px 0 rgba(1, 0, 42, 0.05);
-          box-shadow: 0px 1.5px 10px 0 rgba(1, 0, 42, 0.05);
+  box-shadow: 0px 1.5px 10px 0 rgba(1, 0, 42, 0.05);
   text-align: center;
 }
 
@@ -63,7 +63,10 @@ a:active {
   padding-top: 40px;
 }
 
-.data .choose-expenses, .data .optionalexpenses, .data .count-budget, .data .choose-income-label {
+.data .choose-expenses,
+.data .optionalexpenses,
+.data .count-budget,
+.data .choose-income-label {
   margin: 13px 0px;
   font-weight: 500;
   font-size: 14px;
@@ -71,13 +74,17 @@ a:active {
   text-align: center;
 }
 
-.data .expenses-item, .data .optionalexpenses-item, .data .choose-income, .data .choose-sum, .data .choose-percent {
+.data .expenses-item,
+.data .optionalexpenses-item,
+.data .choose-income,
+.data .choose-sum,
+.data .choose-percent {
   height: 35px;
   width: calc((100%/2) - 4px);
   border-radius: 2.5px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
-          box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
+  box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
   border: none;
   padding-left: 10px;
   margin-bottom: 10px;
@@ -85,23 +92,41 @@ a:active {
   color: #a7a7a7;
 }
 
-.data .expenses-item::-webkit-input-placeholder, .data .optionalexpenses-item::-webkit-input-placeholder, .data .choose-income::-webkit-input-placeholder, .data .choose-sum::-webkit-input-placeholder, .data .choose-percent::-webkit-input-placeholder {
+.data .expenses-item::-webkit-input-placeholder,
+.data .optionalexpenses-item::-webkit-input-placeholder,
+.data .choose-income::-webkit-input-placeholder,
+.data .choose-sum::-webkit-input-placeholder,
+.data .choose-percent::-webkit-input-placeholder {
   opacity: .3;
 }
 
-.data .expenses-item:-ms-input-placeholder, .data .optionalexpenses-item:-ms-input-placeholder, .data .choose-income:-ms-input-placeholder, .data .choose-sum:-ms-input-placeholder, .data .choose-percent:-ms-input-placeholder {
+.data .expenses-item:-ms-input-placeholder,
+.data .optionalexpenses-item:-ms-input-placeholder,
+.data .choose-income:-ms-input-placeholder,
+.data .choose-sum:-ms-input-placeholder,
+.data .choose-percent:-ms-input-placeholder {
   opacity: .3;
 }
 
-.data .expenses-item::-ms-input-placeholder, .data .optionalexpenses-item::-ms-input-placeholder, .data .choose-income::-ms-input-placeholder, .data .choose-sum::-ms-input-placeholder, .data .choose-percent::-ms-input-placeholder {
+.data .expenses-item::-ms-input-placeholder,
+.data .optionalexpenses-item::-ms-input-placeholder,
+.data .choose-income::-ms-input-placeholder,
+.data .choose-sum::-ms-input-placeholder,
+.data .choose-percent::-ms-input-placeholder {
   opacity: .3;
 }
 
-.data .expenses-item::placeholder, .data .optionalexpenses-item::placeholder, .data .choose-income::placeholder, .data .choose-sum::placeholder, .data .choose-percent::placeholder {
+.data .expenses-item::placeholder,
+.data .optionalexpenses-item::placeholder,
+.data .choose-income::placeholder,
+.data .choose-sum::placeholder,
+.data .choose-percent::placeholder {
   opacity: .3;
 }
 
-.data .expenses-item-btn, .data .optionalexpenses-btn, .data .count-budget-btn {
+.data .expenses-item-btn,
+.data .optionalexpenses-btn,
+.data .count-budget-btn {
   width: 70px;
   height: 30px;
   display: block;
@@ -110,7 +135,7 @@ a:active {
   border-radius: 2.5px;
   background-image: linear-gradient(336deg, #ffbd75, #ff964b), linear-gradient(#ffffff, #ffffff);
   -webkit-box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
-          box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
+  box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
   color: #fff;
   font-weight: 100;
   font-size: 12px;
@@ -141,7 +166,8 @@ a:active {
   width: 30px;
 }
 
-.data .choose-sum, .data .choose-percent {
+.data .choose-sum,
+.data .choose-percent {
   width: 30%;
   margin: 15px;
 }
@@ -155,7 +181,7 @@ a:active {
   border-radius: 2.5px;
   background-image: linear-gradient(336deg, #ffbd75, #ff964b), linear-gradient(#ffffff, #ffffff);
   -webkit-box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
-          box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
+  box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
   color: #fff;
   font-weight: 100;
   font-size: 12px;
@@ -176,10 +202,10 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 90%;
   min-height: 400px;
   margin: 0 auto;
@@ -187,10 +213,25 @@ a:active {
   padding: 25px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1.5px 20px 0 rgba(1, 0, 42, 0.1);
-          box-shadow: 0px 1.5px 20px 0 rgba(1, 0, 42, 0.1);
+  box-shadow: 0px 1.5px 20px 0 rgba(1, 0, 42, 0.1);
 }
 
-.result-table .budget, .result-table .budget-value, .result-table .daybudget, .result-table .daybudget-value, .result-table .level, .result-table .level-value, .result-table .expenses, .result-table .expenses-value, .result-table .optionalexpenses, .result-table .optionalexpenses-value, .result-table .income, .result-table .income-value, .result-table .monthsavings, .result-table .monthsavings-value, .result-table .yearsavings, .result-table .yearsavings-value {
+.result-table .budget,
+.result-table .budget-value,
+.result-table .daybudget,
+.result-table .daybudget-value,
+.result-table .level,
+.result-table .level-value,
+.result-table .expenses,
+.result-table .expenses-value,
+.result-table .optionalexpenses,
+.result-table .optionalexpenses-value,
+.result-table .income,
+.result-table .income-value,
+.result-table .monthsavings,
+.result-table .monthsavings-value,
+.result-table .yearsavings,
+.result-table .yearsavings-value {
   width: 48%;
   margin-top: 10px;
   min-height: 40px;
@@ -198,7 +239,14 @@ a:active {
   font-weight: 500;
 }
 
-.result-table .budget-value, .result-table .daybudget-value, .result-table .level-value, .result-table .expenses-value, .result-table .optionalexpenses-value, .result-table .income-value, .result-table .monthsavings-value, .result-table .yearsavings-value {
+.result-table .budget-value,
+.result-table .daybudget-value,
+.result-table .level-value,
+.result-table .expenses-value,
+.result-table .optionalexpenses-value,
+.result-table .income-value,
+.result-table .monthsavings-value,
+.result-table .yearsavings-value {
   color: #61a654;
   word-break: break-word;
 }
@@ -210,22 +258,26 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
-.result .time-data .year, .result .time-data .month, .result .time-data .day {
+.result .time-data .year,
+.result .time-data .month,
+.result .time-data .day {
   font-size: 16px;
   font-weight: 500;
 }
 
-.result .time-data .year-value, .result .time-data .month-value, .result .time-data .day-value {
+.result .time-data .year-value,
+.result .time-data .month-value,
+.result .time-data .day-value {
   height: 35px;
   width: calc((100%/2) - 4px);
   border-radius: 2.5px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
-          box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
+  box-shadow: 0px 2.5px 10px 0 rgba(1, 0, 42, 0.1);
   border: none;
   padding-left: 10px;
   margin-bottom: 10px;
@@ -235,4 +287,5 @@ a:active {
   height: 30px;
   margin-left: 25px;
 }
+
 /*# sourceMappingURL=style.css.map */
