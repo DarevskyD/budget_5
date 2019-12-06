@@ -102,49 +102,35 @@ checkSavings.addEventListener("click", function() {
   }
 });
 
+chooseSum.addEventListener("input", function() {
+  if (appData.savings == true) {
+    let sum = +chooseSum.value,
+      percent = +choosePercent.value;
+
+    appData.monthIncome = (sum / 100 / 12) * percent;
+    appData.yearIncome = (sum / 100) * percent;
+    monthSavingsValue.textContent = appData.monthIncome.toFixed(1);
+    yearsavingsValue.textContent = appData.yearIncome.toFixed(1);
+  }
+});
+
+choosePercent.addEventListener("input", function() {
+  if (appData.savings == true) {
+    let sum = +chooseSum.value,
+      percent = +choosePercent.value;
+
+    appData.monthIncome = (sum / 100 / 12) * percent;
+    appData.yearIncome = (sum / 100) * percent;
+    monthSavingsValue.textContent = appData.monthIncome.toFixed(1);
+    yearsavingsValue.textContent = appData.yearIncome.toFixed(1);
+  }
+});
+
 let appData = {
   budget: money,
   expenses: {},
   optionalExpenses: {},
   income: [],
   timeData: time,
-  savings: false,
-  chooseExpenses: function() {},
-  detectDayBudget: function() {},
-  detectLevel: function() {},
-  checkSavings: function() {
-    if (appData.savings == true) {
-      let save = +prompt("Какова сумма накоплений?"),
-        percent = +prompt("Под какой процент?");
-
-      appData.monthIncome = (save / 100 / 12) * percent;
-      alert("Доход в месяц с депозита: " + appData.monthIncome);
-    }
-  },
-  chooseOptExpenses: function() {},
-  chooseIncome: function() {
-    let items = prompt(
-      "Что принесет дополнительный доход? (Перечислите через запятую)",
-      ""
-    );
-    while (typeof items != "string" || typeof items == null || items == "") {
-      items = prompt(
-        "Что принесет дополнительный доход? (Перечислите через запятую)",
-        ""
-      );
-    }
-    appData.income = items.split(", ");
-    appData.income.push(prompt("Может что-то ещё?", ""));
-    appData.income.sort();
-
-    appData.income.forEach(function(item, i) {
-      alert("Способы доп. заработка: " + (i + 1) + ". " + item);
-    });
-  }
+  savings: false
 };
-
-for (let key in appData) {
-  console.log(
-    "Наша программа включает в себя данные: " + key + ": " + appData[key]
-  );
-}
