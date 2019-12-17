@@ -30,7 +30,7 @@ expensesItemBtn.disabled = true;
 countBudgetBtn.disabled = true;
 optionalExpensesBtn.disabled = true;
 
-startBtn.addEventListener("click", function () {
+startBtn.addEventListener("click", () => {
   expensesItemBtn.disabled = false;
   countBudgetBtn.disabled = false;
   optionalExpensesBtn.disabled = false;
