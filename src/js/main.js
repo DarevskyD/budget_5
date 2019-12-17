@@ -30,7 +30,7 @@ expensesItemBtn.disabled = true;
 countBudgetBtn.disabled = true;
 optionalExpensesBtn.disabled = true;
 
-startBtn.addEventListener("click", function() {
+startBtn.addEventListener("click", function () {
   expensesItemBtn.disabled = false;
   countBudgetBtn.disabled = false;
   optionalExpensesBtn.disabled = false;
@@ -49,7 +49,7 @@ startBtn.addEventListener("click", function() {
   dayValue.value = new Date(Date.parse(time)).getDate();
 });
 
-expensesItemBtn.addEventListener("click", function() {
+expensesItemBtn.addEventListener("click", () => {
   let sum = 0;
   for (let i = 0; i < expensesItem.length; i++) {
     let a = expensesItem[i].value,
@@ -71,7 +71,7 @@ expensesItemBtn.addEventListener("click", function() {
   expensesValue.textContent = sum;
 });
 
-optionalExpensesBtn.addEventListener("click", function() {
+optionalExpensesBtn.addEventListener("click", () => {
   for (let i = 0; i < optionalExpensesItem.length; i++) {
     let opt = optionalExpensesItem[i].value;
     appData.optionalExpenses[i] = opt;
@@ -79,7 +79,7 @@ optionalExpensesBtn.addEventListener("click", function() {
   }
 });
 
-countBudgetBtn.addEventListener("click", function() {
+countBudgetBtn.addEventListener("click", () => {
   if (appData.budget != undefined) {
     appData.moneyPerDay = (
       (appData.budget - +expensesValue.textContent) /
@@ -99,13 +99,13 @@ countBudgetBtn.addEventListener("click", function() {
   }
 });
 
-chooseIncome.addEventListener("input", function() {
+chooseIncome.addEventListener("input", () => {
   let items = chooseIncome.value;
   appData.income = items.split(", ");
   incomeValue.textContent = appData.income;
 });
 
-checkSavings.addEventListener("click", function() {
+checkSavings.addEventListener("click", () => {
   if (appData.savings == true) {
     appData.savings = false;
   } else {
@@ -113,7 +113,7 @@ checkSavings.addEventListener("click", function() {
   }
 });
 
-chooseSum.addEventListener("input", function() {
+chooseSum.addEventListener("input", () => {
   if (appData.savings == true) {
     let sum = +chooseSum.value,
       percent = +choosePercent.value;
@@ -125,7 +125,7 @@ chooseSum.addEventListener("input", function() {
   }
 });
 
-choosePercent.addEventListener("input", function() {
+choosePercent.addEventListener("input", () => {
   if (appData.savings == true) {
     let sum = +chooseSum.value,
       percent = +choosePercent.value;
